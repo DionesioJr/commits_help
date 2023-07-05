@@ -2,8 +2,7 @@
 📄<br>Padrões de commits 
 </h1>
 
-
-De acordo com a documentação do **Conventional Commits**, Commits Semânticos são uma convenção simples para ser utilizada nas mensagens de commit. Essa convenção define  um conjunto de regras para criar um histórico de commit explícito, o que facilita a criação de ferramentas automatizadas.
+De acordo com a documentação do **Conventional Commits**, Commits Semânticos são uma convenção simples para ser utilizada nas mensagens de commit. Essa convenção define um conjunto de regras para criar um histórico de commit explícito, o que facilita a criação de ferramentas automatizadas.
 
 Esses commits auxiliarão você e sua equipe a entenderem de forma facilitada quais alterações foram realizadas no trecho de código que foi commitado.
 
@@ -31,7 +30,7 @@ O commit semântico possui os elementos estruturais abaixo (tipos), que informam
 
 - `chore` - Commits do tipo chore indicam **atualizações de tarefas** de build, configurações de administrador, pacotes... como por exemplo adicionar um pacote no gitignore. (Não inclui alterações em código)
 
-- `ci` - Commits do tipo ci indicam mudanças relacionadas a **integração contínua** (*continuous integration*).
+- `ci` - Commits do tipo ci indicam mudanças relacionadas a **integração contínua** (_continuous integration_).
 
 ## ☑️ Recomendações
 
@@ -93,10 +92,105 @@ O commit semântico possui os elementos estruturais abaixo (tipos), que informam
       <td><code>init</code></td>
     </tr>
     <tr>
-      <td>Configuração</td>
-      <td>🔧 <code>:wrench:</code></td>
-      <td><code>chore</code></td>
-    </tr>
+  <td>Integração contínua</td>
+  <td>🔧 <code>:wrench:</code></td>
+  <td><code>ci</code></td>
+</tr>
+<tr>
+  <td>Depreciação</td>
+  <td>⚠️ <code>:warning:</code></td>
+  <td><code>deprecation</code></td>
+</tr>
+<tr>
+  <td>Estilização</td>
+  <td>🎨 <code>:art:</code></td>
+  <td><code>style</code></td>
+</tr>
+<tr>
+  <td>Hotfix</td>
+  <td🚑> <code>:ambulance:</code></td>
+  <td><code>hotfix</code></td>
+</tr>
+<tr>
+  <td>Segurança</td>
+  <td>🔒 <code>:lock:</code></td>
+  <td><code>security</code></td>
+</tr>
+<tr>
+  <td>Reversão</td>
+  <td>⏪ <code>:rewind:</code></td>
+  <td><code>revert</code></td>
+</tr>
+<tr>
+  <td>Experimento</td>
+  <td>🔬 <code>:microscope:</code></td>
+  <td><code>experiment</code></td>
+</tr>
+<tr>
+  <td>Configuração</td>
+  <td>🔧 <code>:wrench:</code></td>
+  <td><code>config</code></td>
+</tr>
+<tr>
+  <td>Changelog</td>
+  <td>📝 <code>:pencil:</code></td>
+  <td><code>changelog</code></td>
+</tr>
+<tr>
+  <td>Estilização CSS</td>
+  <td>🎀 <code>:ribbon:</code></td>
+  <td><code>css</code></td>
+</tr>
+<tr>
+  <td>Estilização HTML</td>
+  <td>🎨 <code>:art:</code></td>
+  <td><code>html</code></td>
+</tr>
+<tr>
+  <td>Estilização JavaScript</td>
+  <td>🖌️ <code>:crayon:</code></td>
+  <td><code>js</code></td>
+</tr>
+<tr>
+  <td>Limpeza de código</td>
+  <td>🧹 <code>:broom:</code></td>
+  <td><code>cleanup</code></td>
+</tr>
+<tr>
+  <td>Adição de log</td>
+  <td>📃 <code>:page_with_curl:</code></td>
+  <td><code>log</code></td>
+</tr>
+<tr>
+  <td>Exclusão de log</td>
+  <td>🗑️ <code>:wastebasket:</code></td>
+  <td><code>log</code></td>
+</tr>
+<tr>
+  <td>Atualização de dependência</td>
+  <td>🆙 <code>:up:</code></td>
+  <td><code>dependency</code></td>
+</tr>
+<tr>
+  <td>Reorganização de código</td>
+  <td>🔄 <code>:arrows_counterclockwise:</code></td>
+  <td><code>rearrange</code></td>
+</tr>
+<tr>
+  <td>Compatibilidade com dispositivos móveis</td>
+  <td>📱 <code>:iphone:</code></td>
+  <td><code>mobile</code></td>
+</tr>
+<tr>
+  <td>Compatibilidade com navegadores</td>
+  <td>🌐 <code>:globe_with_meridians:</code></td>
+  <td><code>browsers</code></td>
+</tr>
+<tr>
+  <td>Organização de arquivos</td>
+  <td>🗂️ <code>:card_file_box:</code></td>
+  <td><code>file-organization</code></td>
+</tr>    
     <tr>
       <td>Deploy</td>
       <td>🚀 <code>:rocket:</code></td>
@@ -215,7 +309,6 @@ O commit semântico possui os elementos estruturais abaixo (tipos), que informam
   </tbody>
 </table>
 
-
 ## Mensagens de commit styleguide
 
 - Usar modo imperativo ("Adiciona feature" não "Adicionando feature" ou "Adicionada feature")
@@ -223,28 +316,45 @@ O commit semântico possui os elementos estruturais abaixo (tipos), que informam
 - Considere descrever com detalhes no corpo do commit
 - Considere usar um emoji no início da mensagem de commit
 
-Emoji | Code | Commit Type
------------- | ------------- | -------------
-:tada: | `:tada:` | initial commit
-:art: | `:art:` | quando melhorar a estrutura/formato do codigo
-:racehorse: | `:racehorse:` | quando melhorar a performance
-:memo: | `:memo:` | quando escrever alguma documentação
-:bug: | `:bug:` | quando corrigir um bug
-:fire: | `:fire:` | quando remover códigos ou arquivos
-:green_heart: | `:green_heart:` | quando corrigir uma build no CI
-:white_check_mark: | `:white_check_mark:` | quando adicionar testes
-:lock: | `:lock:` | quando melhorar a segurança
-:arrow_up: | `:arrow_up:` | quando der upgrade em dependência
-:arrow_down: | `:arrow_down:` | quando der downgrade em dependências
-:poop: | `:poop:` | deprecated
-:construction: | `:construction:` | em construção
-:rocket: | `:rocket:` | nova feature
-:see_no_evil: | `:see_no_evil:` | gambiarra
-:gift: | `:gift:` | nova versão
-
-
+| Emoji              | Code                 | Commit Type                                   |
+| ------------------ | -------------------- | --------------------------------------------- |
+| :tada:             | `:tada:`             | initial commit                                |
+| :art:              | `:art:`              | quando melhorar a estrutura/formato do código |
+| :racehorse:        | `:racehorse:`        | quando melhorar a performance                 |
+| :memo:             | `:memo:`             | quando escrever alguma documentação           |
+| :bug:              | `:bug:`              | quando corrigir um bug                        |
+| :fire:             | `:fire:`             | quando remover códigos ou arquivos            |
+| :green_heart:      | `:green_heart:`      | quando corrigir uma build no CI               |
+| :white_check_mark: | `:white_check_mark:` | quando adicionar testes                       |
+| :lock:             | `:lock:`             | quando melhorar a segurança                   |
+| :arrow_up:         | `:arrow_up:`         | quando der upgrade em dependência             |
+| :arrow_down:       | `:arrow_down:`       | quando der downgrade em dependências          |
+| :poop:             | `:poop:`             | deprecated                                    |
+| :construction:     | `:construction:`     | em construção                                 |
+| :rocket:           | `:rocket:`           | nova feature                                  |
+| :see_no_evil:      | `:see_no_evil:`      | gambiarra                                     |
+| :gift:             | `:gift:`             | nova versão                                   |
+| :link:             | `:link:`             | integration-tests                             |
+| :mag:              | `:mag:`              | database-optimization                         |
+| :wood:             | `:wood:`             | debug-logs                                    |
+| :spider_web:       | `:spider_web:`       | compatibility-old-browsers                     |
+| :art:              | `:art:`              | css-refactor                                  |
+| :twisted_rightwards_arrows: | `:twisted_rightwards_arrows:` | merge-conflict-resolution             |
+| :package:          | `:package:`          | cache                                         |
+| :recycle:          | `:recycle:`          | code-refactor                                 |
+| :shield:           | `:shield:`           | security-fix                                  |
+| :arrow_up:         | `:arrow_up:`         | update-dependencies                           |
+| :lock:             | `:lock:`             | authentication                                |
+| :sparkles:         | `:sparkles:`         | feature                                       |
+| :chart_with_upwards_trend: | `:chart_with_upwards_trend:` | seo-fix                             |
+| :globe_with_meridians:     | `:globe_with_meridians:`     | internationalization                  |
+| :building_construction:    | `:building_construction:`    | infrastructure-changes                |
+| :heavy_dollar_sign:        | `:heavy_dollar_sign:`        | monetization                          |
+| :mag_right:        | `:mag_right:`        | code-analysis                          |
+| :books:            | `:books:`            | documentation-update                   |
 
 ## 💻 Exemplos
+
 <table>
   <thead>
     <tr>
@@ -322,13 +432,13 @@ Emoji | Code | Commit Type
   </tbody>
 </table>
 
-
 ### Exemplo
+
 ```bash
 git commit -m ":memo: Adiciona instruções de contribuição
 >
 > Foi criado o arquivo CONTRIBUTING.md com as instruções de
 > como fazer um bom commit"
-``` 
+```
 
 <br>[🔝 Voltar ao topo](#padrões-de-commits-) <br>
