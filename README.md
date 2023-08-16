@@ -352,7 +352,7 @@ O commit semântico possui os elementos estruturais abaixo (tipos), que informam
     <td><code>Pencil2</code></td>
   </tr>
   <tr>
-    <td>:framed_picture:</td>
+    <td>Imagem</td>
     <td>🖼️ <code>:pencil2:</code></td>
     <td><code>framed_picture</code></td>
   </tr>
