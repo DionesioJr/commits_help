@@ -306,6 +306,56 @@ O commit semântico possui os elementos estruturais abaixo (tipos), que informam
       <td>🥅 <code>:goal_net:</code></td>
       <td></td>
     </tr>
+     <tr>
+    <td>Livro Azul</td>
+    <td>📘 <code>:blue_book:</code></td>
+    <td><code>blue_icon</code></td>
+      </tr>
+  <tr>
+    <td>Livro Laranja</td>
+    <td>📙 <code>:orange_book:</code></td>
+    <td><code>orange_icon</code></td>
+  </tr>
+  <tr>
+    <td>Livro Verde</td>
+    <td>📗 <code>:green_book:</code></td>
+    <td><code>green_icon</code></td>
+  </tr>
+  <tr>
+    <td>Livro Fechado</td>
+    <td>📕 <code>:closed_book:</code></td>
+    <td><code>closed_icon</code></td>
+  </tr>
+  <tr>
+    <td>Fichário</td>
+    <td>📒 <code>:ledger:</code></td>
+    <td><code>ledger</code></td>
+  </tr>
+  <tr>
+    <td>Jornal</td>
+    <td>📰 <code>:newspaper:</code></td>
+    <td><code>newspaper</code></td>
+  </tr>
+  <tr>
+    <td>Sinal de Proibição</td>
+    <td>🚫 <code>:no_entry_sign:</code></td>
+    <td><code>no_entry</code></td>
+  </tr>
+  <tr>
+    <td>Livro aberto</td>
+    <td>📖 <code>:closed_book:</code></td>
+    <td><code>closed_book</code></td>
+  </tr>
+  <tr>
+    <td>Lápis</td>
+    <td>✏️ <code>:pencil2:</code></td>
+    <td><code>Pencil2</code></td>
+  </tr>
+  <tr>
+    <td>:framed_picture:</td>
+    <td>🖼️ <code>:pencil2:</code></td>
+    <td><code>framed_picture</code></td>
+  </tr>
   </tbody>
 </table>
 
